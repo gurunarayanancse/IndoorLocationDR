@@ -1,0 +1,15 @@
+//
+//  SceneDelegate.h
+//  IndoorLocationDR
+//
+//  Created by Guru Narayanan on 05/04/23.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+
+@property (strong, nonatomic) UIWindow * window;
+
+@end
+
