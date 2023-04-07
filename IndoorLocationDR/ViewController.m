@@ -21,40 +21,40 @@
 
 - (void)didUpdateMap:(MistMap *)map {
     _mistMap = map;
-    
     [_mistMapView sd_setImageWithURL:[NSURL URLWithString:map.url] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
-       
-        [self.mistMapView setHidden:false];
-        
-        double ScreenWidth = [UIScreen mainScreen].bounds.size.width;
-        double ScreenHeight = [UIScreen mainScreen].bounds.size.height;
-        
-        double screenRatio = ScreenWidth / ScreenHeight;
-        double mapRatio = (double)map.width / (double)map.height;
-        
-        if(mapRatio > screenRatio){
-            self.mapViewWidth.constant = ScreenWidth;
-            self.mapViewHeight.constant = screenRatio * map.height;
-        }
-        else{
-            self.mapViewWidth.constant = map.width + 25.0;
-            self.mapViewHeight.constant = map.height;
-            self.mistMapView.frame = CGRectMake(0, 0,  map.width + 25.0, map.height);
-        }
-        
-        self.mapScaleX = self.mapViewWidth.constant / map.width;
-        self.mapScaleY = self.mapViewHeight.constant / map.height;
+        [self setScaleFactor:map];
     }];
+    
 }
 
 - (void)didUpdateRelativeLocation:(MistPoint *)relativeLocation {
     double xWithPPM = [relativeLocation x] * [_mistMap ppm] * _mapScaleX;
     double yWithPPM = [relativeLocation y] * [_mistMap ppm] * _mapScaleY;
-    [_userIcon setHidden:false];
-    _userIcon.frame = CGRectMake(xWithPPM, yWithPPM, 20.0, 20.0);
+   
+    _xOfUSer.constant = xWithPPM;
+    _yOfUSer.constant = yWithPPM;
 }
 - (void)didErrorOccurWithType:(ErrorType)errorType andMessage:(NSString *)errorMessage{
-    printf("%s", errorMessage);
+    NSLog(@"error %@", errorMessage);
 }
 
+- (void)setScaleFactor:(MistMap *)mapObj{
+    double ScreenWidth = [UIScreen mainScreen].bounds.size.width;
+    double ScreenHeight = [UIScreen mainScreen].bounds.size.height;
+    
+    double screenRatio = ScreenWidth / ScreenHeight;
+    double mapRatio = (double)mapObj.width / (double)mapObj.height;
+    
+    if(mapRatio > screenRatio){
+        self.mapViewWidth.constant = screenRatio * mapObj.width;
+        self.mapViewHeight.constant = screenRatio * mapObj.height;
+    }
+    else{
+        self.mapViewWidth.constant = mapObj.width;
+        self.mapViewHeight.constant = mapObj.height;
+    }
+    
+    self.mapScaleX = self.mapViewWidth.constant / mapObj.width;
+    self.mapScaleY = self.mapViewHeight.constant / mapObj.height;
+}
 @end

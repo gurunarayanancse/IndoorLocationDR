@@ -8,7 +8,8 @@
 #import <UIKit/UIKit.h>
 #import <MistSDK/MistSDK.h>
 @interface ViewController : UIViewController<IndoorLocationDelegate>
-
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *yOfUSer;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *xOfUSer;
 @property (weak, nonatomic) IBOutlet UIImageView *userIcon;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *mapViewHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *mapViewWidth;
@@ -18,6 +19,8 @@
 
 @property  double mapScaleX;
 @property  double mapScaleY;
+
+- (void)setScaleFactor:(MistMap*)mapObj;
 
 @end
 

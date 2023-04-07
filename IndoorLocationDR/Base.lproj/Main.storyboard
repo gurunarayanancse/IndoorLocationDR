@@ -17,21 +17,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iUf-7J-HXv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iUf-7J-HXv">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="998" constant="240" id="m19-kK-FzM"/>
+                                    <constraint firstAttribute="height" priority="998" constant="128" id="tfn-nr-OXJ"/>
+                                </constraints>
                             </imageView>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bUB-zK-uqk">
-                                <rect key="frame" x="88" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bUB-zK-uqk">
+                                <rect key="frame" x="16" y="21.5" width="20" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Gee-da-jOZ"/>
+                                    <constraint firstAttribute="height" constant="20" id="WQc-Jt-FZC"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iUf-7J-HXv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GWW-qZ-bRQ"/>
+                            <constraint firstItem="bUB-zK-uqk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="LZK-2J-3hh"/>
+                            <constraint firstItem="iUf-7J-HXv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Nl4-wQ-F96"/>
+                            <constraint firstItem="bUB-zK-uqk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Zj8-pd-3nk"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="mapViewHeight" destination="tfn-nr-OXJ" id="cGv-EL-r4S"/>
+                        <outlet property="mapViewWidth" destination="m19-kK-FzM" id="Mqe-rp-Iwt"/>
                         <outlet property="mistMapView" destination="iUf-7J-HXv" id="NQA-CV-bfi"/>
                         <outlet property="userIcon" destination="bUB-zK-uqk" id="odn-IP-TIV"/>
+                        <outlet property="xOfUSer" destination="Zj8-pd-3nk" id="U9w-vl-Uru"/>
+                        <outlet property="yOfUSer" destination="LZK-2J-3hh" id="yH3-ER-gwv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -43,6 +60,9 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
