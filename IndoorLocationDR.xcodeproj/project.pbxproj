@@ -14,6 +14,8 @@
 		1AA41F2929DD1BDD0035059E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA41F2829DD1BDD0035059E /* Assets.xcassets */; };
 		1AA41F2C29DD1BDD0035059E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA41F2A29DD1BDD0035059E /* LaunchScreen.storyboard */; };
 		1AA41F2F29DD1BDD0035059E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA41F2E29DD1BDD0035059E /* main.m */; };
+		1AC1D9C929DEEA5700DB8A45 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1AC1D9C829DEEA5700DB8A45 /* SDWebImage */; };
+		66859EC0E2B7CDCD61B335A7 /* Pods_IndoorLocationDR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F034C8A3CA90E71FDA147B /* Pods_IndoorLocationDR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		1AA41F2B29DD1BDD0035059E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AA41F2D29DD1BDD0035059E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AA41F2E29DD1BDD0035059E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37F034C8A3CA90E71FDA147B /* Pods_IndoorLocationDR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IndoorLocationDR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68BBE534B1BCEA4FC1C1AED5 /* Pods-IndoorLocationDR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorLocationDR.debug.xcconfig"; path = "Target Support Files/Pods-IndoorLocationDR/Pods-IndoorLocationDR.debug.xcconfig"; sourceTree = "<group>"; };
+		6E01B76375838E03E2BFD6FD /* Pods-IndoorLocationDR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorLocationDR.release.xcconfig"; path = "Target Support Files/Pods-IndoorLocationDR/Pods-IndoorLocationDR.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC1D9C929DEEA5700DB8A45 /* SDWebImage in Frameworks */,
+				66859EC0E2B7CDCD61B335A7 /* Pods_IndoorLocationDR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +54,8 @@
 			children = (
 				1AA41F1B29DD1BDC0035059E /* IndoorLocationDR */,
 				1AA41F1A29DD1BDC0035059E /* Products */,
+				65F980B297C9488AB41DB0F9 /* Pods */,
+				8E25DFE332FE31BFEFC5D0AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +85,23 @@
 			path = IndoorLocationDR;
 			sourceTree = "<group>";
 		};
+		65F980B297C9488AB41DB0F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68BBE534B1BCEA4FC1C1AED5 /* Pods-IndoorLocationDR.debug.xcconfig */,
+				6E01B76375838E03E2BFD6FD /* Pods-IndoorLocationDR.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8E25DFE332FE31BFEFC5D0AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37F034C8A3CA90E71FDA147B /* Pods_IndoorLocationDR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,15 +109,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AA41F3229DD1BDD0035059E /* Build configuration list for PBXNativeTarget "IndoorLocationDR" */;
 			buildPhases = (
+				FFCF453824EF9B0B4040BE8F /* [CP] Check Pods Manifest.lock */,
 				1AA41F1529DD1BDC0035059E /* Sources */,
 				1AA41F1629DD1BDC0035059E /* Frameworks */,
 				1AA41F1729DD1BDC0035059E /* Resources */,
+				772282CEBED872BB41F2FDF9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = IndoorLocationDR;
+			packageProductDependencies = (
+				1AC1D9C829DEEA5700DB8A45 /* SDWebImage */,
+			);
 			productName = IndoorLocationDR;
 			productReference = 1AA41F1929DD1BDC0035059E /* IndoorLocationDR.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +150,9 @@
 				Base,
 			);
 			mainGroup = 1AA41F1029DD1BDC0035059E;
+			packageReferences = (
+				1AC1D9C729DEEA5700DB8A45 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 1AA41F1A29DD1BDC0035059E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +174,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		772282CEBED872BB41F2FDF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IndoorLocationDR/Pods-IndoorLocationDR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IndoorLocationDR/Pods-IndoorLocationDR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IndoorLocationDR/Pods-IndoorLocationDR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFCF453824EF9B0B4040BE8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IndoorLocationDR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1AA41F1529DD1BDC0035059E /* Sources */ = {
@@ -287,26 +363,31 @@
 		};
 		1AA41F3329DD1BDD0035059E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68BBE534B1BCEA4FC1C1AED5 /* Pods-IndoorLocationDR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G7GN89947M;
+				DEVELOPMENT_TEAM = X8VHD2K5NF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IndoorLocationDR/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Need to access Bluetooth";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.waioz.Dev.IndoorLocationDR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waioz.Dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,26 +395,31 @@
 		};
 		1AA41F3429DD1BDD0035059E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E01B76375838E03E2BFD6FD /* Pods-IndoorLocationDR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G7GN89947M;
+				DEVELOPMENT_TEAM = X8VHD2K5NF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IndoorLocationDR/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Need to access Bluetooth";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.waioz.Dev.IndoorLocationDR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waioz.Dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -361,6 +447,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1AC1D9C729DEEA5700DB8A45 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1AC1D9C829DEEA5700DB8A45 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AC1D9C729DEEA5700DB8A45 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1AA41F1129DD1BDC0035059E /* Project object */;
 }

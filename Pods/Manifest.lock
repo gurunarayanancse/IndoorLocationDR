@@ -1,0 +1,16 @@
+PODS:
+  - MistSDKDR-Beta (2.0.2)
+
+DEPENDENCIES:
+  - MistSDKDR-Beta (= 2.0.2)
+
+SPEC REPOS:
+  trunk:
+    - MistSDKDR-Beta
+
+SPEC CHECKSUMS:
+  MistSDKDR-Beta: bd5574bd09e9b39bed9967af5b3e624c9e84b656
+
+PODFILE CHECKSUM: db5fd5ed0aeb41db33b605a7a83541f2f5819a76
+
+COCOAPODS: 1.12.0

@@ -6,9 +6,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MistSDK/MistSDK.h>
+@interface ViewController : UIViewController<IndoorLocationDelegate>
 
-@interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *userIcon;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *mapViewHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *mapViewWidth;
+@property (strong, nonatomic) IBOutlet UIImageView *mistMapView;
+@property (strong, nonatomic) IndoorLocationManager* indoorLocationManager;
+@property (strong, nonatomic) MistMap* mistMap;
 
+@property  double mapScaleX;
+@property  double mapScaleY;
 
 @end
 
