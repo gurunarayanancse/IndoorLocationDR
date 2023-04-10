@@ -20,6 +20,7 @@
 #import "MSTBeacon.h"
 #import "MSTEnum.h"
 #import "Position.h"
+#import "Node.h"
 #import "IndoorLocationManager.h"
 #import "MSTCentralManagerMapDataSource.h"
 
@@ -50,7 +51,7 @@ __attribute__((deprecated("use IndoorLocationManager instead")))
 
 @property (nonatomic, weak) id<MSTCentralManagerDelegate> delegate;
 @property (nonatomic, weak) id<MSTProximityDelegate> proximityDelegate;
-@property (nonatomic, weak) id<ClientInformationDelegate> clientInformationDelegate;
+//@property (nonatomic, weak) id<ClientInformationDelegate> clientInformationDelegate;
 @property (nonatomic, weak) id<MSTCentralManagerMapDataSource> mapDataSource;
 
 @property (nonatomic) NSUInteger smoothingNumber;
@@ -217,7 +218,7 @@ __attribute__((deprecated("use IndoorLocationManager instead")))
 
 -(void)saveClientInformation:(NSMutableDictionary *)clientInformation;
 
--(void)saveClientInformation:(NSString *)clientName withDelegate:(id<ClientInformationDelegate>)clientInformationDelegate;
+-(void)getClientInformation;
 #pragma mark -- DR in Path
 
 // TODO: move to a category once DR is well tested.
@@ -358,7 +359,7 @@ __attribute__((deprecated("use IndoorLocationManager instead")))
  * Wayfinding
  */
 #pragma mark - Wayfinding
--(NSArray*) getWayfindingPathTo:(Position*) destination;
+-(NSArray<Node*>*) getWayfindingPathTo:(Position*) destination;
 
 @end
 __attribute__((deprecated("use IndoorLocationManager#IndoorLocationDelegate instead")))

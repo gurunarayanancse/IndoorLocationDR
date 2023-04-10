@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MistMap.h"
 #import "Position.h"
+#import "Node.h"
 #import "MSTEnum.h"
 #import "MistPoint.h"
 #import "MistVirtualBeacon.h"
@@ -49,7 +50,7 @@
  * Wayfinding
  */
 #pragma mark - Wayfinding
--(NSArray*) getWayfindingPathTo:(Position*) destination;
+-(NSArray<Node*>*) getWayfindingPathTo:(Position*) destination;
 
 /*!
  *
@@ -65,6 +66,8 @@
 +(void)clearMistUUID;
 
 -(void)saveClientInformation:(NSString *)clientName withDelegate:(id<ClientInformationDelegate>)clientInformationDelegate;
+
+-(void)getClientInformationwithDelegate:(id<ClientInformationDelegate>)clientInformationDelegate;
 
 @end
 
@@ -106,7 +109,7 @@
 - (void) didRangeVirtualBeacon:(MistVirtualBeacon*) mistVirtualBeacon;
 
 @optional
-- (void) didUpdateVirtualBeaconList:(NSArray*) mistVirtualBeacons;
+- (void) didUpdateVirtualBeaconList:(NSArray<MistVirtualBeacon*>*) mistVirtualBeacons;
 
 @end
 
@@ -123,7 +126,7 @@
 * Recieved a list of all maps for all sites / entire org.
 * @param maps   Returns the the maps for all sites / entire org.
 */
-- (void) didReceiveAllMaps:(NSArray*) maps;
+- (void) didReceiveAllMaps:(NSArray<MistMap*>*) maps;
 @optional
 
 @end

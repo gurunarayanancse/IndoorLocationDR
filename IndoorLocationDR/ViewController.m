@@ -22,6 +22,8 @@
 - (void)didUpdateMap:(MistMap *)map {
     _mistMap = map;
     [_mistMapView sd_setImageWithURL:[NSURL URLWithString:map.url] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+        [self.mistMapView setHidden:false];
+        [self.userIcon setHidden:false];
         [self setScaleFactor:map];
     }];
     
@@ -31,8 +33,8 @@
     double xWithPPM = [relativeLocation x] * [_mistMap ppm] * _mapScaleX;
     double yWithPPM = [relativeLocation y] * [_mistMap ppm] * _mapScaleY;
    
-    _xOfUSer.constant = xWithPPM;
-    _yOfUSer.constant = yWithPPM;
+    _xOfUSer.constant = xWithPPM - 10.0;
+    _yOfUSer.constant = yWithPPM - 10.0;
 }
 - (void)didErrorOccurWithType:(ErrorType)errorType andMessage:(NSString *)errorMessage{
     NSLog(@"error %@", errorMessage);
@@ -46,7 +48,7 @@
     double mapRatio = (double)mapObj.width / (double)mapObj.height;
     
     if(mapRatio > screenRatio){
-        self.mapViewWidth.constant = screenRatio * mapObj.width;
+        self.mapViewWidth.constant = ScreenWidth;
         self.mapViewHeight.constant = screenRatio * mapObj.height;
     }
     else{

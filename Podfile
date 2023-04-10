@@ -6,5 +6,5 @@ target 'IndoorLocationDR' do
   use_frameworks!
 
   # Pods for IndoorLocationDR
-  pod 'MistSDKDR-Beta' , '2.0.2'  
+  pod 'MistSDKDR-Beta' , '2.0.3'  
 end

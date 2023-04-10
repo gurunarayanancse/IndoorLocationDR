@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/IndoorLocationManager.h</key>
 		<data>
-		Y1tb/NORfvoPaguC2SoUNbPChc4=
+		XyjK6GnDqmpY5scSLKp3J51ceq0=
 		</data>
 		<key>Headers/MSTAsset.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/MSTCentralManager.h</key>
 		<data>
-		z+tXdOPhyIaUMyDjGBrc2c5BLiw=
+		q3AdyrPCfOFHWKmAjzJocu6JlbI=
 		</data>
 		<key>Headers/MSTCentralManagerMapDataSource.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Headers/MistSDK-Swift.h</key>
 		<data>
-		kj5dSnYwbiJHwSwakIoyavGskuY=
+		iGownDw9cB0kqfDq8jUc3ZBA7Ro=
 		</data>
 		<key>Headers/MistSDK.h</key>
 		<data>
@@ -126,11 +126,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9Dg9BEmZGoSI/HEVokVYJDgshlA=
+		6Vye5P+5CyOpEC72nCrsL4DruNY=
 		</data>
 		<key>Modules/MistSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		qF4QN4cKaoXlT86oyQxgE4tI8R8=
+		0nlozF4rr35zbGte+fISK3Lb4Ho=
 		</data>
 		<key>Modules/MistSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -138,11 +138,11 @@
 		</data>
 		<key>Modules/MistSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		4pPAot8n+qrx5RTr8wSE3at30tc=
+		8FDawcmpUfnK5J+xIdOHsDRRZbc=
 		</data>
 		<key>Modules/MistSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		FJvyv3Q/jgpBK4ejxZsOe621F54=
+		e5onMyBZ7JBPef6p84Q2nHvDlx4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -299,7 +299,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rhz9sqwzKIOUI6WBoj8hlQAIRuBrm5p9H5y5SuT0t/M=
+			qthRatLZ15KUHDB3349bsrzDzFv3ztaJnh1MpyKYGRY=
 			</data>
 		</dict>
 		<key>Headers/MSTAsset.h</key>
@@ -341,7 +341,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dseRU0FlIPXxdSCFLwYWOL8RlVIQTtqbfYmPSKOuk4Y=
+			hFvNYNdmG0MvfMnGS+Egaglq/QQHQ7QPPkpmc53NvYk=
 			</data>
 		</dict>
 		<key>Headers/MSTCentralManagerMapDataSource.h</key>
@@ -446,7 +446,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3akDUYnsMXKgduRGWvzgT7tdorZLXDZqUOTyUB9wuHY=
+			ucOT4v59pTO3i5DdeYKKCtNb1f8ArCG7v2lkVg3Q3eM=
 			</data>
 		</dict>
 		<key>Headers/MistSDK.h</key>
@@ -509,7 +509,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3lcyBrW7UFh8JIZNHxF+eU/TnqIxp7zzt5fe+RsNs/U=
+			vqUYjEmv4uHBaLOn9S6iVW4Qep0cyxC+sarmv70slcs=
 			</data>
 		</dict>
 		<key>Modules/MistSDK.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -523,14 +523,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dx3tXWFE/FtH8vSYAQYS0rsqxxYUhjUdFCh68LMFsMU=
+			Y2Hgv1laG1feJRyx/0Dd8tzbNfjNH0oJ6IWocLhncVo=
 			</data>
 		</dict>
 		<key>Modules/MistSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kgfJoG0DHDQsZtUy1lvkch2YjTHJmeiDpps9bl/tJxQ=
+			cfVR8r79Z3UDv1YvST4Sxvdp1kWhhQpq0GSPAHSTaHU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
